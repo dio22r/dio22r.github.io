@@ -1,0 +1,46 @@
+#slide {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.slide-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.slide-content {
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.title-1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.title-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+
+.title-and {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 1.5rem;
+}
