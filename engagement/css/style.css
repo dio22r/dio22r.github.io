@@ -15,6 +15,13 @@ body > div {
     bottom:0px;
     left:0px;
     right:0px;
+}
+
+#slide.close-invitation {
+    z-index: 6;
+}
+
+#slide.open-invitation {
     z-index: 4;
 }
 

@@ -127,8 +127,6 @@ $(function() {
         $("#invitation-name").removeClass("d-none");
         $(".invitation-to").removeClass("d-none");
 
-        $("#content").removeClass("d-none");
-        
         $("audio").trigger('play');
     })
     
