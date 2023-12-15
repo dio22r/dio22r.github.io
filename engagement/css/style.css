@@ -1,5 +1,6 @@
 body {
     scroll-snap-type: y mandatory;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body > div {
@@ -22,7 +23,7 @@ body > div {
     position: relative;
 }
 
-.carousel-item img {
+#slide .carousel-item img {
     object-fit: cover;
     height: 100vh;
 }
@@ -61,6 +62,29 @@ body > div {
     font-size: 3rem;
 }
 
+.title-1-sm {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+}
+
+.title-2-sm {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.title-3-sm {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.title-2-lg {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+}
+
 .title-name {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
@@ -86,7 +110,7 @@ body > div {
 .invitation-name {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 #content {
@@ -120,8 +144,12 @@ body > div {
     color: #333;
 }
 
+#content-detail .icon {
+    font-size: 3rem;
+}
+
 #form-rsvp {
-    min-height: 100vh;
+    
 }
 
 .bg-color-1 {
@@ -129,7 +157,7 @@ body > div {
 }
 
 .bg-color-2 {
-    background: #DFAF5E;
+    background: #8F3B1B;
 }
 
 .bg-color-3 {
@@ -142,4 +170,56 @@ body > div {
 
 .bg-color-5 {
     background: #6D152B;
+}
+
+.fc-1 {
+    color: #333;
+}
+
+#content-detail {
+    position: relative;
+    z-index: 4;
+    margin-top: -100vh;
+}
+
+#hidden-background {
+    background: url("../assets/background-name-2.png") center center;
+    background-size: cover;
+    min-height: 100vh;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+
+}
+
+#content-name {
+    position:relative;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#content-photo {
+    position:relative;
+    z-index: 4;
+    min-height: 100vh;
+}
+
+#form-rsvp-container {
+    position: relative;
+    z-index: 4;
+}
+
+#form-wish-container {
+    position: relative;
+    z-index: 4;
+    min-height: 100vh;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#color-tone > div {
+    height:30px;
 }
