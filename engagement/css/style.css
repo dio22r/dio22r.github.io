@@ -11,11 +11,18 @@ body > div {
 #slide {
     height: 100vh;
     position: fixed;
-    z-index: 4;
     top:0px;
     bottom:0px;
     left:0px;
     right:0px;
+}
+
+#slide.close-invitation {
+    z-index: 6;
+}
+
+#slide.close-invitation {
+    z-index: 4;
 }
 
 .carousel {

@@ -119,5 +119,15 @@ $(function() {
             $("#people").val(0);
         }
     })
+
+    $("#open-invitation").click(function() {
+        $("#open-invitation-wrapper").addClass("d-none");
+        $("#slide").removeClass("close-invitation");
+        $("#slide").addClass("open-invitation");
+        $("#invitation-name").removeClass("d-none");
+        $(".invitation-to").removeClass("d-none");
+
+        $("audio").trigger('play');
+    })
     
 });
