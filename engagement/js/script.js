@@ -1,6 +1,9 @@
 $(function() {
     const baseInviteUrl = "https://script.google.com/macros/s/AKfycbxBR8b-Hj2AeP2ClfSLPbEMqhRwcsZHU4CCxhGZkk8d59bEVo9Z1OuLOnUsGTXd6Adw/exec";
 
+    const baseWishUrl = "https://script.google.com/macros/s/AKfycbyHy9UrNxJ-pkDYRNvrVIPatQ1ElVXRdZX_ly-NuNCk12UfpyRYPnEQ5QQV8nDi2nS42g/exec";
+
+    const arrWish = [];
     const urlParams = new URLSearchParams(window.location.search);
 
     const id = urlParams.get("id");
@@ -11,6 +14,8 @@ $(function() {
                 $(".invitation-code").val(res.result.code);
             });
     }
+
+    initWishes();
         
 
     const form = document.getElementById("form-wish");
@@ -43,19 +48,20 @@ $(function() {
          *
          * change the url to your URL, don't use this
          **/
-        fetch(
-            "https://script.google.com/macros/s/AKfycbwlz17i2yagAYilAmV6LAmrtS9UaNS5Cwdx-getN3lR7QPg_oS-YsYoKpiQ6zkjAltqvw/exec",
-            {
+        fetch(baseWishUrl, {
             redirect: "follow", // don't remove this
             method: "POST",
             body: data,
-            }
-        )
+        })
             .then(res => res.json())
-            .then(data => Swal.fire({
-                icon: "success",
-                title: "Submit RSVP Success!",
-              }))
+            .then(data => {
+                Swal.fire({
+                    icon: "success",
+                    title: "Submit Wish Success!",
+                })
+                
+                initWishes();
+            })
             .catch(err => console.log(err));
     });
 
@@ -130,4 +136,29 @@ $(function() {
         $("audio").trigger('play');
     })
     
+
+    function initWishes() {
+        $.get(baseWishUrl)
+        .then(function(res) {
+            let counter = 0;
+            let html = '';
+            for(result of res.result) {
+                if (counter == 0) {
+                    counter ++;
+                    continue;
+                }
+
+                html += `
+                    <div class="wish-item text-center mb-3">
+                        <p class="wish-text">${result[3]}</p>
+                        <p class="wish-from">( ${result[1]} - ${result[2]} )</p>
+                    </div>
+                `;
+                counter++;
+            }
+
+            $('.wish-wrapper').html(html);
+            $('.wish-wrapper-modal').html(html);
+        });
+    }
 });

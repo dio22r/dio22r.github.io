@@ -220,3 +220,20 @@
 #color-tone > div {
     height:30px;
 }
+
+.wish-wrapper {
+    overflow-y: scroll;
+    max-height: 150px;
+}
+
+.wish-item .wish-text {
+    margin: 0px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.wish-item .wish-from {
+    margin: 0px;
+    color: #333;
+    font-size: 0.8rem;
+}
