@@ -300,6 +300,19 @@ src: url(../assets/fonts.ttf);
 #wedding-gift {
     position: relative;
     z-index: 4;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#wedding-gift {
+    font-size: 0.8rem;
+}
+
+#wedding-gift img {
+    height:20px;
+}
+
+#weddingGift img {
+    height: 20px;
 }
 
 #color-tone > div {
