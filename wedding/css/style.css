@@ -296,6 +296,12 @@ src: url(../assets/fonts.ttf);
     height: 100vh;
 }
 
+
+#wedding-gift {
+    position: relative;
+    z-index: 4;
+}
+
 #color-tone > div {
     height:30px;
 }

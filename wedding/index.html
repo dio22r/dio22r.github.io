@@ -32,7 +32,7 @@
     <body>
         <div id="slide" class="close-invitation">    
             <!-- The video -->
-            <video autoplay muted loop class="video-bg">
+            <video autoplay="autoplay" muted loop class="video-bg">
                 <source src="assets/background-video.mp4" type="video/mp4">
             </video>
 
@@ -131,10 +131,10 @@
                 </div>
 
                 <div class="row justify-content-center pb-5  mx-3" style="font-size: 1.4rem; line-height: 2rem;">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 order-1 order-md-0">
                         <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d995.0914397576225!2d125.0403357290102!3d1.2096600000269637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328723dd3705759b%3A0x9fa3c8483cd203fa!2sRanowangko%20Beach%20Resort!5e1!3m2!1sid!2sid!4v1733928239985!5m2!1sid!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="col-12 col-md-4 pt-5 pt-md-0 ps-0 ps-md-5 d-flex flex-column justify-content-center text-center text-md-start">
+                    <div class="col-12 col-md-4 pt-5 pt-md-0 ps-0 ps-md-5 d-flex flex-column justify-content-center text-center text-md-start order-0 order-md-1  mb-3 mb-md-0">
                         <div class="title-time mb-5">
                             Pemberkatan:
                         </div>
@@ -143,10 +143,10 @@
                     </div>
                 </div>
                 <div class="row justify-content-center pb-5  mx-3" style="font-size: 1.4rem; line-height: 2rem;">
-                    <div class="col-12 col-md-4 order-0 order-md-1">
+                    <div class="col-12 col-md-4 order-1">
                         <iframe class="maps" src="https://www.google.com/maps/d/embed?mid=1fKES3saC7Sfn9WmDNd6tm-6VY974JKc&ehbc=2E312F"></iframe>
                     </div>
-                    <div class="col-12 col-md-4 pt-5 pt-md-0 ps-0 ps-md-5 d-flex flex-column justify-content-center text-center text-md-end order-1 order-md-0 ">
+                    <div class="col-12 col-md-4 pt-5 pt-md-0 pe-0 pe-md-5 d-flex flex-column justify-content-center text-center text-md-end order-0  mb-3 mb-md-0">
                         <div class="title-time mb-5">
                             Resepsi:
                         </div>
@@ -162,7 +162,7 @@
             <div id="form-rsvp-container" class="child bg-color-4 text-white">
                 <div class="container py-5">
                     <div class="row justify-content-center">
-                        <div class="col-9 d-flex justify-content-center align-items-center">
+                        <div class="col-12 col-md-9 d-flex justify-content-center align-items-center">
                             <iframe class="youtube" src="https://www.youtube.com/embed/0gBQXHkxqDc?si=8ZNOWQKQy5He26YZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="col-12 col-md-9 mt-5">
@@ -298,11 +298,12 @@
                     </div>
                 </div>
 
-                <audio id="myAudio" loop class="d-none">
-                    <source src="./assets/audio-wedding.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
             </div>
+
+            <audio id="myAudio" loop class="d-none">
+                <source src="./assets/audio-wedding.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
 
         <!-- Modal -->
