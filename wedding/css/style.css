@@ -1,0 +1,323 @@
+@font-face {
+font-family: "Main Font";
+src: url(../assets/fonts.ttf);
+}
+
+#slide {
+    height: 100vh;
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+#slide.close-invitation {
+    z-index: 100;
+}
+
+#slide.open-invitation {
+    z-index: 4;
+}
+
+.carousel {
+    z-index: 1;
+    position: relative;
+}
+
+#slide .video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container */
+    object-position: center; /* Centers the video */
+}
+
+.slide-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.slide-content .top-content {
+    flex-grow: 1;
+}
+
+.slide-content .bottom-content {
+    height: 225px;
+}
+
+.title-1 {
+    font-family: 'Montserrat', 'Arial';
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.title-1-sm {
+    font-family: 'Main Font', 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.title-2-sm {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.title-3-sm {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.title-2-lg {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+}
+
+.title-name {
+    font-family: 'Main Font', 'Great Vibes', cursive;
+    font-size: 5rem;
+    letter-spacing: 0rem;
+}
+
+.bg-green-lime {
+    background-color: #32CD32;
+}
+
+.title-and {
+    font-family: 'Main Font', 'Great Vibes', sans-serif;
+    font-size: 3rem;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.invitation-to {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+}
+
+.invitation-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+#content {
+    min-height: 100vh;
+    margin-top: 100vh;
+    position:relative;
+    z-index: 5;
+    scroll-snap-type: y mandatory;
+}
+
+#content .child {
+    scroll-snap-align: start;
+}
+
+#content-verse {
+    
+}
+
+.text-verse-1 {
+    max-width: 700px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.text-light-bg {
+    max-width: 700px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.closeup-personal {
+    border: white 10px solid;
+}
+
+.parents {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;;
+}
+
+.date-header {
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.date-sub-header {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-time {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.time {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: normal;
+}
+
+.place {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: lighter;
+}
+
+.maps {
+    width: 100%;
+    height: 300px;
+}
+
+.youtube {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16/9;
+}
+
+.img-galery {
+    width: 100%;
+}
+#form-rsvp {
+    
+}
+
+.bg-color-1 {
+    background: #c2a887;
+}
+
+.bg-color-2 {
+    background: #8F3B1B;
+}
+
+.bg-color-3 {
+    background: #61714D;
+}
+
+.bg-color-4 {
+    background: #8FAE93;
+}
+
+.bg-color-5 {
+    background: #6D152B;
+}
+
+.fc-1 {
+    color: #333;
+}
+
+.free-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    font-weight: 300;
+}
+
+#content-detail {
+    position: relative;
+    z-index: 4;
+    margin-top: -100vh;
+}
+
+#hidden-background {
+    background: url("../assets/background-name-2.png") center bottom;
+    background-size: cover;
+    min-height: 100vh;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+
+}
+
+#content-name {
+    position:relative;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#content-photo {
+    position:relative;
+    z-index: 4;
+    min-height: 100vh;
+}
+
+#form-rsvp-container {
+    position: relative;
+    z-index: 4;
+}
+
+
+#form-family-container {
+    position: relative;
+    z-index: 4;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#form-wish-container {
+    position: relative;
+    z-index: 4;
+    height: 100vh;
+}
+
+#color-tone > div {
+    height:30px;
+}
+
+#form-wish-container .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.wish-wrapper {
+    overflow-y: scroll;
+    max-height: 150px;
+}
+
+.wish-item .wish-text {
+    margin: 0px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.wish-item .wish-from {
+    margin: 0px;
+    color: #333;
+    font-size: 0.8rem;
+}
