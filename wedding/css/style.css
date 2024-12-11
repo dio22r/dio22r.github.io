@@ -204,7 +204,7 @@ src: url(../assets/fonts.ttf);
 
 .youtube {
     width: 100%;
-    max-width: 500px;
+    max-width: 750px;
     aspect-ratio: 16/9;
 }
 
