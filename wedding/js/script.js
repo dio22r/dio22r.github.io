@@ -146,6 +146,7 @@ $(function() {
         $(".invitation-to").removeClass("d-none");
 
         $("audio").trigger('play');
+        $("video").trigger('play');
 
         
         let audio = document.getElementById("myAudio");
