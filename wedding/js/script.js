@@ -146,6 +146,10 @@ $(function() {
         $(".invitation-to").removeClass("d-none");
 
         $("audio").trigger('play');
+
+        
+        let audio = document.getElementById("myAudio");
+        audio.volume = 0.1;
     })
     
 
